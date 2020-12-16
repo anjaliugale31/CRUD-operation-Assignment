@@ -6,6 +6,6 @@ Report generation:
 	refer PDF CRUD-operation-assignment.pdf
 	
 <img src="Screenshot from 2020-12-16 10-33-58.png"/>
-<img src="Screenshot from 2020-12-14 16-57-28.png"/>
+<img src="Screenshot from 2020-12-16 10-36-10.png"/>
 
 
