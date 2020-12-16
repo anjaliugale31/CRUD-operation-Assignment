@@ -21,7 +21,7 @@ function readFormData() {
 
     return formData;
 }
-
+//insert new row
 function insertNewRecord(data) {
     var table = document.getElementById("employeeList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
