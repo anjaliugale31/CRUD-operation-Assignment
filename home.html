@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="home.css">
+    <!-- Bootstrap links scripts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-5">
+                <!-- left half of webpage -->
+                <div class="split_left">
+                    <div class="center">
+                        <img src ="logo.png" height="230px" >
+                        <img src="bulb-1.gif" height="170px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-7">
+                <!-- right half of web page -->
+                <div class="split_right">
+                   <div class="container">
+
+                    <marquee scrollamount="10">We Build Solutions ! </marquee><br>
+                    <!-- form created prevent the default browser suggestions -->
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div class="row">
+                            <div class="col">
+                            <!-- first name  -->
+                            <label>First Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="fullName" id="fullName">
+                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                            <!-- last name  -->
+                            <label>last Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="lname" id="lname">
+                             </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                            <!-- DOB -->
+                            <label>DOB</label>
+                            <input type="date" name="dob" id="dob">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col">
+                            <!-- city -->
+                            <label>City*</label>
+                            <input type="text" name="city" id="city">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                            <!-- mobile number -->
+                            <label>Mobile Number*</label>
+                            <input type="text" name="number" id="number">
+                            </div>
+                        </div>
+                        <!-- submit the values -->
+                        <div  class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                    <!-- Report created -->
+                    <center><h3>Report</h3></center>
+                    <div>
+                        <table class="list" id="employeeList">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>DOB</th>
+                                    <th>City</th>
+                                    <th>Mobile Number</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- table body -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="home.js"></script>
+</body>
+</html>
